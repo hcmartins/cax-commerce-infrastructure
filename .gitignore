@@ -1,0 +1,21 @@
+# Compiled ARM JSON output from `az bicep build` / `bicep build`
+infrastructure/**/*.json
+!infrastructure/parameters/**/*.json
+
+# Local secrets / scratch — never commit real values
+*.env
+.env
+.env.*
+!*.env.example
+secrets.*
+*.pfx
+*.key
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Az CLI local state
+.azure/
